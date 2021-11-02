@@ -1,0 +1,29 @@
+.animete_img{
+    width: 150px;
+    height: 130px;
+    position: absolute;
+    z-index: 111;
+    opacity: 0;
+    transition: 1.5s;
+  }
+  .ani{
+    animation: hover 1.5s     forwards;
+
+  }
+  
+  @keyframes hover {
+      0%{opacity: 0;}
+      50%{
+        transform: scale(1);
+      }
+      70%{
+        opacity: 1;
+      }
+      100%{
+        opacity: 0;
+        left: 1250px;
+        top: var(--y);
+        transform: scale(.3);
+      }
+  }
+

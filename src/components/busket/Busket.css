@@ -1,0 +1,81 @@
+
+
+.busket_container{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    z-index: 110;
+    left: 0;
+}
+.busket_bg{
+    width: 100%;
+    height: 100vh;
+    background: #00000080;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.busket{
+    width: 70%;
+    margin: auto;
+    background: #fff;
+    margin-top: 0px;
+    border-radius: 5px;
+    animation: busket .5s  .15s   forwards;
+    opacity: 0;
+
+}
+@keyframes busket {
+    100%{
+        margin-top: 50px;
+        opacity: 1;
+    }
+}
+.busket_head{
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 20px;
+  
+}
+.busket_head h3{
+    font-weight: 400;
+}
+.busket_body,
+.busket_footer{
+    padding: 16px;
+}
+.busket_footer{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+.busket_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.busket_item div{
+    display: flex;
+    align-items: center;
+}
+.busket_item svg{
+    cursor: pointer;
+}
+.busket_img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+.busket_amount{
+    width: 30%;
+    justify-content: space-between;
+}
+.busket_price{
+    font-weight: 600;
+    font-size: 22px;
+}

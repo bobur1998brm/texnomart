@@ -1,0 +1,40 @@
+
+.category{
+    display: flex;
+    margin-bottom: 40px;
+}
+.category_item{
+    border: 1px solid #eee;
+    width: 100%;
+    padding: 28px 22px 60px;
+    text-align: center;
+    color: #777;
+    cursor: pointer;
+    position: relative;
+}
+.category_item > h3{
+    font-weight: 300;
+    font-size: 18px;
+    padding: 12px 0;
+}
+.category_item > p{
+    font-size: 12px;
+}
+.category_item > img{
+    width: 80px;
+}
+
+.category_item > svg{
+    font-size: 30px;
+    margin-top: 20px;
+    color: #aaa;
+    transition: .3s ease-in;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+.category_item:hover svg{
+    left: 80%;
+
+}

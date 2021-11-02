@@ -1,0 +1,136 @@
+
+.product{
+    width: 240px;
+    border: 1px solid #eee;
+    height: 400px;
+    padding: 16px;
+    cursor: pointer;
+}
+.product_img{
+    height: 40%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.product_img > img{
+    display: block;
+    margin: auto;
+    transition: .3s;
+}
+.product_img:hover img{
+    transform: scale(1.03);
+}
+.product_rek{
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 80px;
+    background: dodgerblue;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    padding: 2px 0;
+}
+
+.product_body{
+    height: 60%;
+}
+.product_body > h4{
+    font-weight: 300;
+    color: dodgerblue;
+    text-transform: capitalize;
+    padding: 8px 0;
+}
+.product_title{
+    text-decoration: none;
+    color: #222;
+}
+.product_body  h3{
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding-bottom: 8px;
+    transition: .3s;
+
+}
+.product_body  h3:hover{
+    color: var(--color_gold);
+}
+.rating{
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+}
+.rating  svg{
+    color: var(--color_gold);
+    font-size: 20px;
+}
+.rating  span{
+    font-size: 14px;
+    margin-left: 6px;
+}
+.product_price{
+    font-size: 18px ;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+.product_Price_month{
+    font-size: 12px;
+    background: #eee;
+    padding: 6px;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.product_btns{
+    display: flex;
+    justify-content: space-between;
+}
+.product_buy{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: var(--color_gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    transition: .3s;
+}
+.product_buy svg{
+    font-size: 24px;
+}
+.product_buy:hover{
+    background: #e4af02;
+    cursor: pointer;
+}
+.product_scale{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.product_scale svg{
+    font-size: 24px;
+    color: #888;
+}
+.product_scale:hover{
+    background: #555;
+    cursor: pointer;
+}
+.product_scale:hover svg{
+    color: #fff;
+}
+
+
+

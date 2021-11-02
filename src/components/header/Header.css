@@ -1,0 +1,137 @@
+
+
+.header{
+    width: 100%;
+    height: 160px;
+    background: var(--bg_primary);
+    position: sticky;
+    top: -60px;
+    left: 0;
+    z-index: 110;
+}
+.header_top{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    height: 50px;
+    color: var(--color_gray);
+}
+.header_topSelect{
+    font-size: 15px;
+}
+.header_topSelect > select{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.header_topCollection{
+    display: flex;
+    list-style: none;
+    font-size: 15px;
+    width: 60%;
+    justify-content: space-between;
+}
+.header_top > p{
+    font-size: 22px;
+}
+
+.header_bottom{
+    height: 110px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+   
+}
+.logo  img{
+    width: 240px;
+}
+.header_search{
+    width: 42%;
+    height: 44px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    border-left: 1px solid #ddd;
+}
+.header_search > select{
+    height: 100%;
+    border: none;
+    outline: none;
+}
+.header_search > input{
+    width: 64%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-left: 1px solid #ddd;
+    text-indent: 16px;
+}
+.voice{
+    width: 30px;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.voice > svg{
+    font-size: 22px;
+    color: var(--color_gray);
+}
+.search_icon{
+    width: 40px;
+    height: 100%;
+    background: var(--color_gold);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.search_icon > svg{
+    font-size: 22px;
+    color: #fff;
+}
+
+.login_kassa{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+.login_kassaItem{
+    display: flex;
+    align-items:center;
+    color: var(--color_gray);
+    cursor: pointer;
+    position: relative;
+}
+.login_kassaItem > svg{
+    font-size: 26px;
+    margin-right: 6px;
+}
+.count_order{
+    position: absolute;
+    top: -22px;
+    left: 50%;
+    width: 22px;
+    height: 20px;
+    background: red;
+    transform: translateX(-50%);
+    color: #fff;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    font-size: 14px;
+    
+}
+.count_order::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    z-index: -1;
+    width: 10px;
+    height: 10px;
+    background: red;
+    transform: rotate(45deg);
+}
